@@ -9,8 +9,7 @@ $(call soong_config_set_bool,gms_mosey,uses_nopauth,$(TARGET_USES_MOSEY_NOPAUTH)
 
 PRODUCT_COPY_FILES += \
     vendor/gms-mosey/mosey/etc/init/mosey.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mosey.rc \
-    vendor/gms-mosey/mosey/etc/sysconfig/initial-package-stopped-states-mosey.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/initial-package-stopped-states-mosey.xml \
-    vendor/gms-mosey/mosey/etc/sysconfig/locked-components-mosey.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/locked-components-mosey.xml
+    vendor/gms-mosey/mosey/etc/sysconfig/initial-package-stopped-states-mosey.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/initial-package-stopped-states-mosey.xml
 
 PRODUCT_PACKAGES += \
     libmosey_daemon_ffi \
